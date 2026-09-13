@@ -1,7 +1,7 @@
 import { embed, embedMany } from "ai";
 import { createGoogleGenerativeAI } from "@ai-sdk/google";
 
-export async function generateembedding(text: string) {
+export async function generateEmbedding(text: string) {
   const input = text.replace("\n", " ");
   const { embedding } = await embed({
     model: createGoogleGenerativeAI({
